@@ -13,8 +13,13 @@ ol, ul{
     display: table;
 }
 
+.board-wrapper{
+    grid-area: board;
+}
+
 .status{
     margin-bottom: 10px;
+    grid-area: status;
 }
 
 .square{
@@ -48,3 +53,14 @@ ol, ul{
 .game-info{
     margin-left: 20px;
 }
+
+.wrapper{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'status'
+    'board'
+    ;
+    margin: 0 auto;
+}
+
